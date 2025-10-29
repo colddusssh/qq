@@ -11,8 +11,3 @@ def toDecBase(num, base):
 	for i in range(lenNum):
 		ans += "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ".find(num[i]) * base ** (lenNum - 1 - i)
 	return ans
-
-
-n = 9 ** 22 + 3 ** 66 - 12
-
-print(toNBase(n, 3).count("2"))
